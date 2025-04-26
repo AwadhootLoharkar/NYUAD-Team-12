@@ -1,0 +1,7 @@
+qbraid[azure]==0.9.6.dev20250425155658
+qbraid-qir
+pasqal-cloud
+pulser-core
+pulser-simulation
+qiskit
+cirq
