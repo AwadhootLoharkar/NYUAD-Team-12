@@ -22,10 +22,16 @@ Follow these steps to set up the environment:
    .venv\Scripts\activate
    ```
 
-4. **Install Dependencies**:
-   Once the virtual environment is activated, install all the required dependencies from the `requirements.txt` file:
+4. **Install Dependencies**:<br>
+   There are two methods to do this<br>
+   **Option 1: one easy command to use the .lock file**
    ```bash
-   pip install -r requirements.txt
+   uv sync
+   ```
+   **Option 2**
+   Second: using the requirements.txt file directly using pip or uv pip or even conda if you like:
+   ```bash
+   uv pip install -r requirements.txt
    ```
 
 5. **Verify Installation**:
