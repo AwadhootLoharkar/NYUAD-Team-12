@@ -31,7 +31,7 @@ Follow these steps to set up the environment:
    **Option 2**
    Second: using the requirements.txt file directly using pip or uv pip or even conda if you like:
    ```bash
-   uv pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 
 5. **Verify Installation**:
