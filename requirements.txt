@@ -1,8 +1,8 @@
-uv==0.1.0
-jupyter==1.0.0
-numpy==1.24.0
-qiskit==0.43.0
-pennylane==0.30.0
-matplotlib==3.7.0
-seaborn==0.12.0
+uv>=0.1.0
+jupyter>=1.0.0
+numpy>=1.24.0
+qiskit>=0.43.0
+pennylane>=0.30.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
 qbraid==0.9.6.dev20250425155658
