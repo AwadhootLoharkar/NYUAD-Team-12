@@ -1,7 +1,7 @@
 [project]
 name = "nyuad-team-12"
 version = "0.1.0"
-description = "Add your description here"
+description = "As part of NYUAD Hackathon for social good 2025, we create a method to predicdt extension pre-emptively using QRNNs!"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
