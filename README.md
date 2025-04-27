@@ -106,6 +106,9 @@ This project demonstrates the use of Quantum Support Vector Regression (QSVR) an
 - Ensure that the versions of Qiskit and Qiskit Machine Learning are compatible.
 - The quantum model requires a quantum simulator or quantum hardware for execution.
 
+### Implementation
+All the code for the implementation is available in the `Quantum_SVR.ipynb` Jupyter notebook. Open the notebook to explore the workflow, train the models, and perform forecasting.
+
 ### Results
 - The project provides a comparison between classical and quantum models for time-series forecasting.
 - Forecasted values are visualized, and the performance of both models is evaluated.
