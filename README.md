@@ -59,14 +59,14 @@ This project demonstrates the use of Quantum Support Vector Regression (QSVR) an
 2. **Create Training and Testing Datasets**:
    - Time-series datasets are created by using a sliding window approach to generate input sequences and corresponding target values.
 
-3. **Visualize Data**:
-   - The target variable (e.g., population) is visualized over time to understand trends and patterns.
-
-4. **Split Data**:
+3. **Split Data**:
    - The dataset is split into training and testing sets based on specified date ranges.
 
-5. **Scale Data**:
+4. **Scale Data**:
    - Features and target variables are scaled using MinMaxScaler to normalize the data for better model performance.
+
+5. **Visualize Data**:
+   - The target variable (e.g., population) is visualized over time to understand trends and patterns.
 
 6. **Train QSVR Model**:
    - The quantum kernel is defined using the `ZZFeatureMap`.
