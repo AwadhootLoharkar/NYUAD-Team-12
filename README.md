@@ -41,3 +41,71 @@ Follow these steps to set up the environment:
    ```
 
 You are now ready to use the environment!
+
+---
+
+## Quantum Support Vector Regression (Quantum SVR)
+
+### Overview
+This project demonstrates the use of Quantum Support Vector Regression (QSVR) and classical SVR models for population forecasting. The workflow involves data preprocessing, visualization, model training, evaluation, and forecasting using both classical and quantum approaches.
+
+### Workflow
+
+1. **Load and Process Data**:
+   - The dataset is loaded from an Excel file.
+   - Unnecessary columns are removed, and the date column is converted to a datetime format.
+   - The data is indexed by the date column for time-series analysis.
+
+2. **Visualize Data**:
+   - The target variable (e.g., population) is visualized over time to understand trends and patterns.
+
+3. **Split Data**:
+   - The dataset is split into training and testing sets based on specified date ranges.
+
+4. **Scale Data**:
+   - Features and target variables are scaled using MinMaxScaler to normalize the data for better model performance.
+
+5. **Create Training and Testing Datasets**:
+   - Time-series datasets are created by using a sliding window approach to generate input sequences and corresponding target values.
+
+6. **Train QSVR Model**:
+   - The quantum kernel is defined using the `ZZFeatureMap`.
+   - The QSVR model is trained using the quantum kernel.
+
+7. **Evaluate the Model**:
+   - The trained model is evaluated on both training and testing datasets.
+   - Metrics such as Mean Squared Error (MSE) are calculated to assess model performance.
+
+8. **Tune Parameters**:
+   - Parameters such as `gamma`, `C`, and `epsilon` can be adjusted in the main execution section to optimize model performance.
+
+9. **Train Classical and Quantum Models**:
+   - Both classical SVR and QSVR models are trained using the prepared datasets.
+
+10. **Test Models**:
+    - Both models are tested on the testing dataset, and their predictions are compared.
+
+11. **Forecasting**:
+    - Future population values are forecasted using both models.
+    - The results are visualized, highlighting the differences between classical and quantum approaches.
+
+### How to Use
+1. Modify the dataset path and column names in the main execution section to match your data.
+2. Adjust the parameters in the main execution section to tune the models.
+3. Run the notebook to execute the workflow, train the models, and generate forecasts.
+
+### Dependencies
+- Qiskit
+- Qiskit Machine Learning
+- Scikit-learn
+- Pandas
+- Matplotlib
+- OpenPyXL
+
+### Notes
+- Ensure that the versions of Qiskit and Qiskit Machine Learning are compatible.
+- The quantum model requires a quantum simulator or quantum hardware for execution.
+
+### Results
+- The project provides a comparison between classical and quantum models for time-series forecasting.
+- Forecasted values are visualized, and the performance of both models is evaluated.
