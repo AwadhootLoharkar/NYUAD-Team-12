@@ -65,7 +65,7 @@ This project demonstrates the use of Quantum Support Vector Regression (QSVR) an
 4. **Scale Data**:
    - Features and target variables are scaled using MinMaxScaler to normalize the data for better model performance.
 
-5. **Visualize Data**:
+5. **Visualize Trends**:
    - The target variable (e.g., population) is visualized over time to understand trends and patterns.
 
 6. **Train QSVR Model**:
