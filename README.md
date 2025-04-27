@@ -56,17 +56,17 @@ This project demonstrates the use of Quantum Support Vector Regression (QSVR) an
    - Unnecessary columns are removed, and the date column is converted to a datetime format.
    - The data is indexed by the date column for time-series analysis.
 
-2. **Visualize Data**:
+2. **Create Training and Testing Datasets**:
+   - Time-series datasets are created by using a sliding window approach to generate input sequences and corresponding target values.
+
+3. **Visualize Data**:
    - The target variable (e.g., population) is visualized over time to understand trends and patterns.
 
-3. **Split Data**:
+4. **Split Data**:
    - The dataset is split into training and testing sets based on specified date ranges.
 
-4. **Scale Data**:
+5. **Scale Data**:
    - Features and target variables are scaled using MinMaxScaler to normalize the data for better model performance.
-
-5. **Create Training and Testing Datasets**:
-   - Time-series datasets are created by using a sliding window approach to generate input sequences and corresponding target values.
 
 6. **Train QSVR Model**:
    - The quantum kernel is defined using the `ZZFeatureMap`.
@@ -94,6 +94,11 @@ This project demonstrates the use of Quantum Support Vector Regression (QSVR) an
 2. Adjust the parameters in the main execution section to tune the models.
 3. Run the notebook to execute the workflow, train the models, and generate forecasts.
 
+### Implementation
+All the code for the implementation is available in the `Quantum_SVR.ipynb` Jupyter notebook. Open the notebook to explore the workflow, train the models, and perform forecasting.
+
+You can also open the `Quantum_SVR.ipynb` notebook in **Qbraid Lab** and run everything on the Qbraid cloud. This allows you to leverage Qbraid's quantum computing resources for executing the quantum model.
+
 ### Dependencies
 - Qiskit
 - Qiskit Machine Learning
@@ -105,9 +110,6 @@ This project demonstrates the use of Quantum Support Vector Regression (QSVR) an
 ### Notes
 - Ensure that the versions of Qiskit and Qiskit Machine Learning are compatible.
 - The quantum model requires a quantum simulator or quantum hardware for execution.
-
-### Implementation
-All the code for the implementation is available in the `Quantum_SVR.ipynb` Jupyter notebook. Open the notebook to explore the workflow, train the models, and perform forecasting.
 
 ### Results
 - The project provides a comparison between classical and quantum models for time-series forecasting.
